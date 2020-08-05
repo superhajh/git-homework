@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+
+    <title>1차 스파르타 과제</title>
+    <script>
+        function orderComplete() {
+            alert('주문이 완료되었습니다!');
+        }
+    </script>
+</head>
+<style type="text/css">
+
+    * {
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 20px;
+    }
+
+    .entire-container {
+        width: 650px;
+        height: 1020px;
+        border: 1px solid lightgray;
+        margin: 0px auto;
+    }
+
+    .img-container {
+        background-image: url("Image from iOS.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 400px;
+        height: 300px;
+        margin: 10px auto;
+        border-radius: 8px;
+    }
+
+    .middle-container {
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    .info {
+        text-align: left;
+    }
+
+    .main-ca {
+        display: inline;
+    }
+
+    .main-ca .being-sold {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .box {
+        width: 500px;
+
+    }
+
+    .order {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .order-name {
+        font-size: 25px;
+        margin-right: 30px;
+    }
+
+
+    .username {
+        width: 300px;
+        height: 30px;
+        border-radius: 8px;
+        border: 1px solid;
+        position: absolute;
+        right: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+    .btn {
+        margin: 20px auto;
+        width: 450px;
+
+    }
+</style>
+<body>
+<div class="entire-container">
+    <div class="img-container">
+    </div>
+    <div class="middle-container">
+        <div class="info">
+            <div class="main-ca">
+                <span class="being-sold">우리집 강아지 팝니다.</span>
+                <span class="price">가격:10억원/1마리 한정판매</span>
+            </div>
+            <p>너무 귀찮게 굴어서 팝니다. 견종은 스피츠고 나이는 곧 세살됩니다.<br> 이름은 하루에요. 손, 앉아, 돌아 다 못합니다.<br>
+                아니 사실 아는데 그냥 안합니다. 하기 싫대요.<br>삶이 무료하신 분, 반복되는 일상이 지겨우신분.<br> 지랄견 하루 입양하시면.<br> 무료했던 삶이 얼마나 소중한지 알게되십니다.
+            </p>
+            <div class="box">
+                <div class="order">주문하기</div>
+
+                <div class="input-group mb-3">
+                    <div>
+                        <span class="order-name">주문자 이름:</span>
+                    </div>
+                    <input type="text" class=username>
+                </div>
+                <div class="input-group mb-3">
+                    <div>
+                        <span class="order-name">수량:</span>
+                    </div>
+                    <select class="username">
+                        <option value="1">1마리</option>
+                        <option value="2">2마리</option>
+                        <option value="3">3마리</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <div>
+                        <span class="order-name">주소:</span>
+                    </div>
+                    <input type="text" class=username>
+                </div>
+                <div class="input-group mb-3">
+                    <div>
+                        <span class="order-name">전화번호:</span>
+                    </div>
+                    <input type="text" class=username>
+                </div>
+                <button onclick="orderComplete()" type="button" class="btn btn-primary btn-lg">주문하기</button>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
